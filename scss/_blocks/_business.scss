@@ -1,0 +1,169 @@
+.panel{
+    height: 348px;
+    background: var(--Lavender, #F4F0F8);
+    text-align: center;
+    h1{
+        color: var(--Black, #232536);
+        text-align: center;
+        font-family: Sen;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 114.286% */
+        letter-spacing: -2px;
+        padding-top: 80px;
+    }
+    p{
+        color: var(--Medium-grey, #6D6E76);
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+    strong{
+        color: var(--Black, #232536);
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+.search{
+   width: 1280px !important;
+    margin: 50px 0 0 80px;
+    padding: 20px 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+    &::-webkit-input-placeholder,
+    &::-webkit-search-cancel-button{
+        display: none;  
+    }
+}
+
+.business-cards{
+    margin-top: 57px;
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: row;
+            gap: 20px;
+            border: 0;
+            img{
+                width: 447px;
+            }
+            .card-text{
+                h4{
+                    color: var(--Purple, #592EA9);
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px; /* 125% */
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                }
+                h3{
+                    color: var(--Black, #232536);
+                    font-family: "Sen";
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 48px; /* 133.333% */
+                    letter-spacing: -2px;
+                    margin: 20px 0 40px 0;
+                }
+                p{
+                    width: 779.581px;
+                    color: var(--Medium-grey, #6D6E76);
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 175% */
+                    }
+            }
+        }
+    }
+    .pagenation{
+        margin-top: 50px;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            gap: 10px;
+            width: 800px;
+            margin: 0 auto; 
+            li{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #000;
+                color: gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:first-child{
+                    color: gray;
+                    margin-right: 20px;
+                    background-color: transparent;
+                    width: 200px;
+                    height: 0;
+                }
+                &:last-child{
+                    color: #000;
+                    font-weight: 900;
+                    margin-left: 20px;
+                    background-color: transparent;
+                    width: 200px;
+                    height: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .search{
+        width: 380px !important;
+        margin: 0 auto;
+        margin: 20px 20px 0 20px;
+    }
+    .business-cards{
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                img{
+                    width: 300px;
+                }
+                .card-text{
+                    p{
+                        width: 200px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
